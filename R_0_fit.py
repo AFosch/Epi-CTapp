@@ -107,7 +107,7 @@ def R0 (flag,epi_scenario= epi_scenario):
 
     #Read epidemic layer 
     layer1 = nx.read_graphml('Networks/layer1_' + flag)
-    adjacency= nx.to_scipy_sparse_matrix(layer1, dtype=np.float32, format='csr')
+    adjacency= nx.to_scipy_sparse_array(layer1, dtype=np.float32, format='csr')
 
     #Eigenvalue adjacency matrix
     eigen_adj, _ = eigs(adjacency)
