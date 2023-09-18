@@ -395,8 +395,8 @@ def main (input_par):
     layer2 = nx.read_graphml('Networks/layer2_'+str(flag))
 
     # Extract adjacency matrix 
-    adj_l1 = nx.to_scipy_sparse_matrix(layer1, dtype=np.float32, format='csr')
-    adj_l2 = nx.to_scipy_sparse_matrix(layer2, dtype=np.float32, format='csr')
+    adj_l1 = nx.to_scipy_sparse_array(layer1, dtype=np.float32, format='csr')
+    adj_l2 = nx.to_scipy_sparse_array(layer2, dtype=np.float32, format='csr')
 
     del layer1, layer2
 

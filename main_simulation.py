@@ -18,9 +18,6 @@ from tqdm import tqdm
 
 matplotlib.rc('font', **{'family': 'sans-serif'})
 
-# %%
-#N= 100
-
 
 #%%
 start_time = time.time()
@@ -502,9 +499,9 @@ from parameters_def import baseline_param
  leave_quar_prob, detection_rate, max_adopters, compliance,
  leave_ref_prob, av_reluct_thr,window_size,epi_scenario] = baseline_param()
 
-from parameters_def import main_obtainGt_param
+from parameters_def import main_simulation_param
 
-[title_parameter, test_param, test_list, xview, yview] = main_obtainGt_param()
+[title_parameter, test_param, test_list, xview, yview] = main_simulation_param()
 
 # OVERVIEW SIMULATION
 print('Network parameters: ' + flag + ' Num nodes:' + str(num_nodes) + ' ' + str(
@@ -572,8 +569,8 @@ for ks in range(0, len(test_list)):
         raise NameError('Number of nodes in layer1 or layer2 not equal to num_nodes. Check parameters_def.py.')
 
     # Extract adjacency matrix 
-    adj_l1 = nx.to_scipy_sparse_matrix(layer1, dtype=np.float32, format='csr')
-    adj_l2 = nx.to_scipy_sparse_matrix(layer2, dtype=np.float32, format='csr')
+    adj_l1 = nx.to_scipy_sparse_array(layer1, dtype=np.float32, format='csr')
+    adj_l2 = nx.to_scipy_sparse_array(layer2, dtype=np.float32, format='csr')
     del layer1, layer2
 
     # MAIN LOOP
