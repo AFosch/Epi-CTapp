@@ -9,10 +9,19 @@ Here we present a novel approach for modelling the co-evolution of an epidemic o
 
 ## Installation
 
-Clone the GitHub repository to your local device. 
-```bash
-git clone git@github.com:Ariein2/CTapp_model.git
-```
+1. Clone the GitHub repository to your local device. 
+    ```bash
+    git clone git@github.com:Ariein2/CTapp_model.git
+    ```
+2. Create a conda environment from the ``environments.yml`` file. For more guidelines on installing conda refer to [conda] (https://conda.io/docs/user-guide/install/). 
+    ```bash
+        conda env create --name epi_app  --file environment.yml     
+    ```
+3. To execute the scripts activate the conda environment using:
+    ```bash
+        conda activate epi_app
+    ```
+
 ## Scripts 
 - ``parameter_def.py`` = Contains the parameter definition for all scripts. There are two types of parameters. 
     -  ``baseline_param()``: Are imported by all scripts. Please take a look at the definition of the Network structure and the parameters of the dynamics.
