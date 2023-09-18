@@ -15,7 +15,7 @@ Here we present a novel approach for modelling the co-evolution of an epidemic o
     ```
 2. Create a conda environment from the ``environments.yml`` file. For more guidelines on installing conda refer to [conda](https://conda.io/docs/user-guide/install/). 
     ```bash
-        conda env create --name epi_app  --file environment.yml     
+        conda env create --name epi_app --file environment.yml     
     ```
 3. To execute the scripts activate the conda environment using:
     ```bash
