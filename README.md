@@ -125,16 +125,7 @@ Here we present a novel approach for modelling the co-evolution of an epidemic o
 
 ## Supplementary Results
 
-- **Figure S1:** Run R script ``nb_fit.R`` from the folder Mobilty_data_fit. (Missing for now)
-    ```bash
-        cd Mobilty_data_fit
-        R
-    ```
-    ```R
-        source(nb_fit.R)
-    ```
-
-- **Figure S2:** Run ``check_network_properties.py``. Obtain Figure S1.
+- **Figure S2:** Run ``check_network_properties.py``. Obtain Figure S2.
 
 - **Figure S3:** Follow instructions for Figure 3 using the following parameters
 
