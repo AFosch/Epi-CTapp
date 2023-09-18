@@ -124,7 +124,6 @@ Here we present a novel approach for modelling the co-evolution of an epidemic o
     ```
 
 ## Supplementary Results
-
 - **Figure S2:** Run ``check_network_properties.py``. Obtain Figure S2.
 
 - **Figure S3:** Follow instructions for Figure 3 using the following parameters
