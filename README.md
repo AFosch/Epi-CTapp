@@ -81,6 +81,8 @@ git clone git@github.com:Ariein2/CTapp_model.git
     test_param = 'compliance'
     test_list = [70]
     ```
+> Please note the stochastic nature of the simulations may result in slighlth different effectiveness of the interventions each time the simulations are executed. 
+
 ## Replicate Figure 4 
 1. Edit ``paramters_def.py``: Define the ``voluntary``scenario in the function ``heatmap_param()``.  
     ```python
