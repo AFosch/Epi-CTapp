@@ -13,7 +13,7 @@ Here we present a novel approach for modelling the co-evolution of an epidemic o
     ```bash
     git clone git@github.com:Ariein2/CTapp_model.git
     ```
-2. Create a conda environment from the ``environments.yml`` file. For more guidelines on installing conda refer to [conda] (https://conda.io/docs/user-guide/install/). 
+2. Create a conda environment from the ``environments.yml`` file. For more guidelines on installing conda refer to [conda](https://conda.io/docs/user-guide/install/). 
     ```bash
         conda env create --name epi_app  --file environment.yml     
     ```
